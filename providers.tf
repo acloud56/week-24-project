@@ -11,3 +11,13 @@ terraform {
 provider "aws" {
   region = "us-east-2"
 }
+
+terraform {
+  backend "consul" {
+    address  = "astdc-consul01p:8500"
+    scheme   = "http"
+    path     = "tf/terraform.tfstate"
+    lock     = true
+    gzip     = false
+  }
+}
