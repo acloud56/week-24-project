@@ -14,7 +14,7 @@ provider "aws" {
 
 terraform {
   backend "consul" {
-    address  = "astdc-consul01p:8500"
+    address  = "astdc-consul01p.dimensional.com:8500"
     scheme   = "http"
     path     = "tf/terraform.tfstate"
     lock     = true
