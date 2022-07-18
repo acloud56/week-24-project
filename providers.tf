@@ -19,5 +19,6 @@ terraform {
     path     = "tf/terraform.tfstate"
     lock     = true
     gzip     = false
+    access_token = "ed90fe83-e476-3186-ad4c-0e2b79c80c92"
   }
 }
